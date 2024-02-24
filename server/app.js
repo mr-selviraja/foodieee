@@ -14,12 +14,24 @@ const { CLIENT_PATH } = require('./config/constants');
 // Create an instance of express application
 const app = express();
 
+// Set the views folder manually
+app.set('views', `${CLIENT_PATH}/src/views`);
+
+// Set the EJS as the view engine
+app.set('view engine', 'ejs');
+
 // Middleware to serve static files
 app.use(express.static(CLIENT_PATH));
 
-// Render index.html template for GET at route '/'
+// Render index.ejs template for GET at route '/'
 app.get('/', (req, res) => {
-  res.sendFile(`${CLIENT_PATH}/public/index.html`);
+  const data = {
+    title: 'Foodie - Foods made by Foodies',
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sapiente dolores recusandae fugit maiores totam eveniet. Placeat possimus ipsam impedit corporis soluta earum neque beatae!',
+  };
+
+  res.render('index', data);
 });
 
 // Specify a port number for the server to serve on
