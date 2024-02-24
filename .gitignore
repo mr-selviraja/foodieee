@@ -1,0 +1,53 @@
+# Node.js
+node_modules/
+
+# Dependency directories
+/dist/
+/dist-web/
+/build/
+
+# macOS
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS generated files
+ehthumbs.db
+Thumbs.db
+
+# Environment variables
+.env
+
+# Visual Studio Code
+.vscode/
+
+# Editor files
+*.sublime-project
+*.sublime-workspace
+.svn/
+
+# IDE
+.idea/
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Image files
+
+# Archives
+*.zip
+*.rar
+*.gz
+*.tar
+
+# User-specific files
+.DS_Store
+Desktop.ini

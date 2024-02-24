@@ -1,0 +1,15 @@
+{
+  "name": "foodieee",
+  "version": "1.0.0",
+  "description": "A dummy restaurant website developed in learning Fullstack development using templating engines",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Selviraja Pasagadugula",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2"
+  }
+}
