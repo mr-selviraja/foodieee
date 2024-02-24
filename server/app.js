@@ -26,7 +26,7 @@ app.use(express.static(CLIENT_PATH));
 // Render index.ejs template for GET at route '/'
 app.get('/', (req, res) => {
   const data = {
-    title: 'Foodie - Foods made by Foodies',
+    title: 'Foodie - Made by Foodies for Foodies..!',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sapiente dolores recusandae fugit maiores totam eveniet. Placeat possimus ipsam impedit corporis soluta earum neque beatae!',
   };
