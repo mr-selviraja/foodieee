@@ -9,6 +9,7 @@ require('dotenv').config();
 
 // Require packages(or)libraries
 const express = require('express');
+const path = require('path');
 const { CLIENT_PATH } = require('./config/constants');
 
 // Create an instance of express application

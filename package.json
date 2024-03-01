@@ -4,13 +4,19 @@
   "description": "A dummy restaurant website developed in learning Fullstack development using templating engines",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:sass": "sass --watch ./client/public/styles/styles.scss:./client/public/styles/styles.css --no-source-map",
+    "start": "nodemon -e js,ejs,html -w . -w client -w server server/app.js",
+    "dev": "concurrently --kill-others \"npm run build:sass\" \"npm run start\""
   },
   "author": "Selviraja Pasagadugula",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.9",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   }
 }

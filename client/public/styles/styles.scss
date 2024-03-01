@@ -1,0 +1,71 @@
+$primary: #f57526;
+$light: #f1f2f6;
+$dark: #2b2420;
+$gray: #817b77;
+$white: #ffffff;
+$border-radius: 1rem;
+
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+
+// BASE STYLES
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.8rem;
+}
+
+.btn {
+  font-size: inherit;
+}
+
+h1 {
+  font-family: 'Lobster', sans-serif;
+}
+
+// UTILITIES
+// Colors
+.color-primary {
+  color: $primary !important;
+}
+
+// Fonts
+.font-accent {
+  font-family: 'Lobster', sans-serif;
+}
+
+// Buttons
+.btn-lg {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 1rem;
+}
+
+.btn-primary {
+  color: #f1f2f6 !important;
+}
+
+// Navbar
+.cart-icon {
+  padding: 0.5rem 0.75rem;
+  font-size: 1.8rem;
+  background-color: $white;
+  border-radius: 50%;
+
+  &-btn {
+    text-decoration: none !important;
+  }
+}
+
+// Mediaqueries
+@media screen and (max-width: 992px) {
+  .cart-icon {
+    padding: 0 !important;
+
+    &-btn {
+      padding: 0 !important;
+    }
+  }
+}
