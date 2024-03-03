@@ -7,6 +7,10 @@ $border-radius: 1rem;
 
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 
+.container {
+  max-width: 114rem;
+}
+
 // BASE STYLES
 html {
   font-size: 62.5%;
@@ -26,6 +30,11 @@ h1 {
 }
 
 // UTILITIES
+// Text sizes
+.heading-primary {
+  font-size: 6rem;
+}
+
 // Colors
 .color-primary {
   color: $primary !important;
@@ -45,8 +54,19 @@ h1 {
 
 .btn-primary {
   color: #f1f2f6 !important;
+
+  &-transparent {
+    background-color: rgba($primary, 20%);
+    color: $primary;
+
+    &:hover {
+      background-color: rgba($primary, 25%);
+      color: $primary;
+    }
+  }
 }
 
+/* Custom Styles */
 // Navbar
 .cart-icon {
   padding: 0.5rem 0.75rem;
@@ -59,6 +79,15 @@ h1 {
   }
 }
 
+// Header
+.header {
+  padding: calc(1rem + 2vw) 2.5vw;
+
+  &__img {
+    width: calc(15rem + 12.5vw);
+  }
+}
+
 // Mediaqueries
 @media screen and (max-width: 992px) {
   .cart-icon {
@@ -67,5 +96,9 @@ h1 {
     &-btn {
       padding: 0 !important;
     }
+  }
+
+  .heading-primary {
+    font-size: 4.5rem !important;
   }
 }
