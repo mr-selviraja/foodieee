@@ -11848,6 +11848,10 @@ textarea.form-control-lg {
   max-width: 114rem;
 }
 
+.card {
+  width: 20rem;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -11869,8 +11873,29 @@ h1, .h1 {
   font-size: 6rem;
 }
 
+.heading-secondary {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.heading-tertiary {
+  font-size: 2.25rem;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
 .color-primary {
   color: #f57526 !important;
+}
+
+.color-primary-light {
+  color: rgba(245, 117, 38, 0.65);
+}
+
+.color-white {
+  color: #ffffff;
 }
 
 .font-accent {
@@ -11913,6 +11938,13 @@ h1, .h1 {
   width: calc(15rem + 12.5vw);
 }
 
+.features {
+  padding: calc(2.5rem + 2.5vw) 0;
+}
+.features__body {
+  gap: 2rem;
+}
+
 @media screen and (max-width: 992px) {
   .cart-icon {
     padding: 0 !important;
@@ -11922,5 +11954,13 @@ h1, .h1 {
   }
   .heading-primary {
     font-size: 4.5rem !important;
+  }
+  .card {
+    width: calc(50% - 2rem);
+  }
+}
+@media screen and (max-width: 576px) {
+  .card {
+    width: 100%;
   }
 }
