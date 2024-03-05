@@ -11869,6 +11869,10 @@ h1, .h1 {
   font-family: "Lobster", sans-serif;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .heading-primary {
   font-size: 6rem;
 }
